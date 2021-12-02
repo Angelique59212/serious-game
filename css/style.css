@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #106900;
+}
+
+#color {
+    font-size: 25rem;
+    display: flex;
+    margin: 20rem;
+    justify-content: space-between;
+    align-items: center;
+}
+

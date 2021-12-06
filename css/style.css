@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,17 +8,94 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
     background: #106900;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    width: 50rem;
+    padding: 0.8rem;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+    border: 2px double black;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-align: center;
+}
+
+#clues {
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
 #color {
     font-size: 25rem;
     display: flex;
-    margin: 20rem;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
+#dross {
+    padding: 1rem;
+    text-align: center;
+}
+
+.rubbish {
+    width: 15rem;
+}
+
+.selected {
+    transform: scale(1.2);
+}
+
+#valid {
+    display: none;
+    font-size: 3rem;
+}
+
+#result {
+    display: none;
+}
+
+#button_container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#score , #details {
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#infos {
+    font-size: 4rem;
+    padding: 0.8rem;
+    color: darkblue;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media screen and (max-width: 510px) {
+    #color {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

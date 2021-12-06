@@ -8,31 +8,55 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Serious Game: Le tri sélectif</h1>
-    </header>
+<header>
+    <h1>Serious Game: Le tri sélectif</h1>
+</header>
 
-    <main>
-        <div id="rubbish"></div>
+<section id="game">
+    <h2>Règle:</h2>
 
-        <div id="color">
-            <div>
-                <img src="/img/yellow.png" alt="dustbin-yellow">
-            </div>
-            <div>
-                <img src="/img/green.png" alt="dustbin-green">
-            </div>
-            <div>
-                <img src="/img/blue.png" alt="dustbin-blue">
-            </div>
-            <div>
-                <img src="/img/brown.png" alt="dustbin-brown">
-            </div>
+    <div id="clues">
+        <p> Choisir la bonne poubelle, vous avez 10 déchets à trier.</p>
+    </div>
+
+    <div id="dross"></div>
+
+    <div id="color">
+        <div id="jaune">
+            <img src="/img/yellow.png" alt="dustbin-yellow">
         </div>
+        <div id="verte">
+            <img src="/img/green.png" alt="dustbin-green">
+        </div>
+        <div id="bleue">
+            <img src="/img/blue.png" alt="dustbin-blue">
+        </div>
+        <div id="marron">
+            <img src="/img/brown.png" alt="dustbin-brown">
+        </div>
+    </div>
 
+    <div id="button_container">
         <input type="button" id="valid" value="Valider">
-    </main>
+    </div>
 
-    <script src="js/app.js"></script>
+</section>
+
+<section id="result">
+
+    <div id="infos">
+        <p>Les poubelles jaunes contiennent: le plastique, le carton ainsi que les boîtes de conserve.</p>
+        <p>Les poubelles vertes contiennent: le verre.</p>
+        <p>Les poubelles bleues contiennent: les journaux et magazines.</p>
+        <p>Les poubelles marrons contiennent: les déchets non recyclables.</p>
+    </div>
+
+    <div id="score"></div>
+
+    <div id="details"></div>
+
+</section>
+
+<script src="js/app.js"></script>
 </body>
 </html>

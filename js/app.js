@@ -34,7 +34,7 @@ function randomTrash() {
 
 function drawImage() {
     let newsImage = document.createElement("img");
-    newsImage.src = "/img/trash/" + actualTrash[0] + ".jpg";
+    newsImage.src = "img/trash/" + actualTrash[0] + ".jpg";
     newsImage.classList = "rubbish";
     dross.appendChild(newsImage);
 }
